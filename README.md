@@ -8,25 +8,14 @@
 git clone https://github.com/LikeLion-KNU/FE_Session.git
 ```
 
-2. 과제가 부여된 세션 날짜 Remote Branch 를 확인하고,
-
-```bash
-git branch -a
-```
-
-3. 해당 Remote Branch 로 Checkout 해주세요
-
-```bash
-git checkout remotes/origin/FE_0430
-```
-
-4. 해당 Remote Branch 에서 본인의 영문이름으로 된 브랜치를 파주세요
+2. main 브랜치에서 영문이름_과제날짜 로 된 브랜치를 파고 checkout 해주세요
 
 ```bash
 git branch HONG_GIL_DONG_0430
+git checkout HONG_GIL_DONG_0430
 ```
 
-5. 해당 날짜 폴더 (ex. FE_0430) 하위에 **❗️영문이름으로 된 디렉토리를 만들고❗️** 과제 코드를 작성해주세요
+3. 해당 날짜 폴더 (ex. FE_0430) 하위에 **❗️영문이름으로 된 디렉토리를 만들고❗️** 과제 코드를 작성해주세요
 
 ```bash
 cd FE_0430
