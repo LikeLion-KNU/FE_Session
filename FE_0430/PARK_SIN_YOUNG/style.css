@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Hanken_Bold";
+  src: url("assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+}
+
+@font-face {
+font-family: "Hanken_ExtraBold";
+src: url("assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Hanken_Medium";
+  src: url("assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+}
+
+.parent {
+  width: 800px;
+  height: 600px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px #e9eefb;
+  border-radius: 30px;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  background: linear-gradient(#6743ff, #322bea);
+  border-radius: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+div.left > h1 {
+  /*Your Result*/
+  font-family: "Hanken_Bold";
+  color:#907df2;
+}
+
+div.circletext > h1{
+  /*76*/
+  font-size: 65px;
+  font-family: "Hanken_Bold";
+  color:#fdfefc;
+}
+div.circletext > p{
+  /*of 100*/
+  font-family: "Hanken_Bold";
+  color:#7568f2;
+  position: relative;
+  top:-40px;
+}
+div.great > p{
+  /*Great*/
+  font-size: 40px;
+  font-family: "Hanken_Bold";
+  color:#ffffff;
+}
+
+div.left > p{
+  /*You scored higher ...*/
+  font-family: "Hanken_Bold";
+  color:#b3aaff;
+}
+
+div.right > h3{
+    /*Summary*/
+    margin-left: 15%;
+    font-size: 30px;
+    font-family: "Hanken_Bold";
+    color:#60657c;
+}
+
+div.Reaction > p {
+
+}
+div.Memory > p {
+  
+}
+div.Verbal > p {
+  
+}
+div.Visual > p {
+  
+}
+.circle {
+
+  width : 200px;
+  height : 200px;
+  border-radius: 50%;
+  background: linear-gradient(#4c22c9, #5139f6);
+  display: inline-block;
+  margin-top: 50px;
+  height : 200px;
+
+}
+.circletext {
+  margin-top: 25%;
+}
+.right{
+  width: 50%;
+  height: 100%;
+  float: right;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+  
+  margin-top: 100px;
+  margin-left: 15%;
+}
+
+.Reaction, .Memory,.Verbal,.Visual{
+  height: 50px;
+  width: 90%;
+  text-align: center;
+  
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top:5%;
+}
+
+.Reaction {
+  background-color: #fff6f5;
+}
+
+div.Reaction > p1{
+  font-size: 20px;
+  color: #ebacad;
+}
+div.Memory > p1{
+  font-size: 20px;
+  color: #f5e1a4;
+}
+div.Verbal > p1{
+  font-size: 20px;
+  color: #b0e6df;
+}
+div.Visual > p1{
+  font-size: 20px;
+  color: #575dc2;
+}
+
+div.Reaction > b{
+  margin-left: 90px;
+}
+div.Memory > b{
+  margin-left: 90px;
+}
+div.Verbal > b{
+  margin-left: 115px;
+}
+div.Visual > b{
+  margin-left: 115px;
+}
+
+
+div.Reaction > p2{
+  font-size: 20px;
+  color: #8b8b8b;
+}
+div.Memory > p2{
+  font-size: 20px;
+  color: #8b8b8b;
+}
+div.Verbal > p2{
+  font-size: 20px;
+  color: #8b8b8b;
+}
+div.Visual > p2{
+  font-size: 20px;
+  color: #8b8b8b;
+}
+.Memory {
+  background-color: #fffbf2;
+}
+
+.Verbal{
+  background-color: #f2fbfa;
+}
+
+.Visual{
+  background-color: #f3f3fd;
+}
+
+p{
+  font-family: "Hanken_Medium";
+}
+
+.button{
+  height: 50px;
+  width:80%;
+  text-align: center;
+  background-color: #303b59;
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin-left : 10%;
+  margin-top:5%;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
