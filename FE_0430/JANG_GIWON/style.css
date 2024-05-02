@@ -1,0 +1,255 @@
+.normal		{ font-weight: 400 }
+.bold		{ font-weight: 700 }
+.bolder, b  { font-weight: 800 }
+.light		{ font-weight: 300 }
+
+*, *::before {
+    font-family: 'NanumSquare', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    width: 650px;
+    height: 450px;
+    border-radius: 26px;
+
+    display: flex;
+
+    box-shadow: 10px 10px 30px #00349630;
+    background-color: white;
+    
+    overflow: hidden;
+}
+
+#card > div.result {
+    width: 50%;
+    height: 100%;
+    border-radius: 26px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    background: linear-gradient(15deg, hsl(241, 81%, 54%) 0%, hsl(252, 100%, 67%) 100%);
+}
+
+div.result > h1 {
+    font-size: 20px;
+    color: #c9c8ff;
+}
+
+div.result > .circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px;
+
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+}
+
+.circle > p {
+    font-size: 60px;
+}
+
+.circle > span {
+    opacity: 0.5;
+}
+
+div.result > h2 {
+    margin-bottom: 14px;
+    font-size: 26px;
+}
+
+div.result > p {
+    opacity: 0.75;
+    width: 70%;
+
+    font-size: 14px;
+    text-align: center;
+}
+
+div.summary {
+    width: 50%;
+    height: 100%;
+
+    padding: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+
+div.summary > h1 {
+    font-size: 20px;
+    color: #393c50;
+}
+
+div.scorebox {
+    width: 100%;
+}
+
+div.scorebox > .item {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 14px 0px 14px 0px;
+    padding: 14px;
+
+    background-color: lightgray;
+}
+
+div.scorebox > .item > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item p {
+    font-size: 15px;
+}
+
+.item.reaction {
+    background-color: #de626613 !important;
+}
+
+.item.reaction p#name {
+    color: #de6266;
+}
+
+.item.memory {
+    background-color: #ffae0013 !important;
+}
+
+.item.memory p#name {
+    color: #ffae00;
+}
+
+.item.verbal {
+    background-color: #26a88913 !important;
+}
+
+.item.verbal p#name {
+    color: #26a889;
+}
+
+.item.visual {
+    background-color: #1f299d13 !important;
+}
+
+.item.visual p#name {
+    color: #1f299d;
+}
+
+.item > p {
+    font-weight: 800;
+    color: #2c2f4775;
+}
+
+.item > p b {
+    color: #2c2f47;
+}
+
+div.summary > button {
+    transition: 0.2s background-color ease-out;
+
+    cursor: pointer;
+
+    height: 50px;
+    border-radius: 25px;
+
+    font-size: 14px;
+    color: white;
+    background-color: #303b59;
+}
+
+div.summary > button:hover {
+    background-color: #475680;
+}
+
+/* 모바일 */
+@media (max-width: 767px){
+    #card {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+
+        flex-direction: column;
+
+        box-shadow: 0px 0px;
+    }
+
+    #card > div.result {
+        width: 100%;
+        height: 45%;
+        border-radius: 0px 0px 26px 26px;
+    }
+
+    div.result > .circle {
+        width: 150px;
+        height: 150px;
+        margin: 30px;
+    }
+
+    div.summary {
+        width: 100%;
+        height: 55%;
+    
+        padding: 40px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+    }
+
+    div.result > p {
+        font-size: 16px;
+    }
+
+    div.scorebox > .item {
+        width: 100%;
+        height: 55px;
+    
+        margin: 18px 0px 18px 0px;
+        padding: 14px;
+    }
+
+    .item p {
+        font-size: 17px;
+    }
+
+    div.summary > button {
+        height: 55px;
+        border-radius: 30px;
+    
+        font-size: 17px;
+    }
+}
