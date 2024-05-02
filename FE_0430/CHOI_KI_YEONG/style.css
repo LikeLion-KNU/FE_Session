@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "Hanken_Bold";
+    src: url("assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Hanken_ExtraBold";
+  src: url("assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Hanken_Medium";
+    src: url("assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer {
+    display: flex;
+    width: 690px;
+    height: 490px;
+    box-shadow: 5px 5px 10px #E9EEFB;
+    border-radius: 20px;
+}
+
+.cardContainer .card {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #6043F3;
+}
+
+.cardContainer .card .cardTitle {
+    position: relative;
+    top: 40px;
+    font-size: 25px;
+    color: #CBC5FB;
+    font-family: "Hanken_Medium";
+    margin-bottom: 20px;
+}
+
+.cardContainer .card .score {
+    position: relative;
+    top: 56px;
+    width: 190px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #422CD2, #422CD2 10%, transparent);
+    border-radius: 50%;
+    font-size: 70px;
+    color: #ffffff;
+    font-family: "Hanken_ExtraBold";
+}
+
+.cardContainer .card .maxScore {
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    color: #857AF7;
+    font-family: "Hanken_Medium";
+}
+
+.cardContainer .card .estimate {
+    position: relative;
+    top: 25px;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Hanken_Medium";
+}
+
+.cardContainer .card .line1, .line2, .line3{
+    position: relative;
+    top: 10px;
+    color: #A6A3F9;
+    font-size: 15px;
+    font-family: "Hanken_Medium";
+}
+
+.cardContainer .rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardContainer .rightSide .summary {
+    position: relative;
+    top: 40px;
+    left: -52px;
+    font-size: 25px;
+    color: black;
+    font-family: "Hanken_Bold";
+}
+
+.cardContainer .rightSide .itemBox1, .itemBox2, .itemBox3, .itemBox4 {
+    position: relative;
+    top: 60px;
+    left: 30px;
+    margin : 8px 0px;
+    width: 273px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.itemBox1 {
+    background-color: #FDF6F5;
+}
+
+.itemBox2 {
+    background-color: #FEFAF2;
+}
+
+.itemBox3 {
+    background-color: #F4FBFA;
+}
+
+.itemBox4 {
+    background-color: #F4F1FE;
+}
+
+.item1, .item2, .item3, .item4 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    left: 18px;
+}
+
+.item1_text, .item2_text, .item3_text, .item4_text {
+    position: relative;
+    top: -3px;
+    left: 52px;
+    font-size: 17px;
+    font-family: "Hanken_Medium";
+}
+
+.item1_text {
+    color: #D3756F;
+}
+
+.item2_text {
+    color: #EAB559;
+}
+
+.item3_text {
+    color: #77B2A2;
+}
+
+.item4_text {
+    color: #40469A;
+}
+
+.item1_score, .item2_score, .item3_score, .item4_score {
+    position: absolute;
+    right: 60px;
+    font-size: 15px;
+    font-family: "Hanken_Medium";
+}
+
+.item1_maxScore, .item2_maxScore, .item3_maxScore, .item4_maxScore {
+    position: absolute;
+    right: 20px;
+    font-size: 15px;
+    color: gray;
+    font-family: "Hanken_Medium";
+}
+
+.continue {
+    width: 274px;
+    height: 54px;
+    position: relative;
+    top: 90px;
+    left: 30px;
+    font-size: 19px;
+    background-color: #323B57;
+    border-radius: 25px;
+    color: white;
+    font-family: "Hanken_Medium";
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
