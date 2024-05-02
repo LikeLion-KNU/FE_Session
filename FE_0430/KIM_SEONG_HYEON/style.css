@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.root-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  margin: 20% 20%;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 500px;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px hsl(240, 41%, 86%);
+}
+.card-container > .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  background-color: hsl(234, 85%, 45%);
+  padding: 20px 30px;
+  color: white;
+  background: hsl(234, 85%, 45%);
+  background: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%) 0%,
+    hsl(241, 81%, 54%) 50%
+  );
+  border-radius: 20px;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  padding: 30px;
+  border-radius: 90%;
+  background: linear-gradient(
+    hsla(256, 72%, 46%, 1) 0%,
+    hsla(241, 72%, 46%, 0) 100%
+  );
+  align-items: center;
+  justify-content: center;
+}
+
+#total {
+  font-size: 3rem;
+}
+#from {
+  font-size: smaller;
+  color: white;
+  opacity: 0.5;
+}
+.left-side .scoreInfo {
+  font-size: smaller;
+  opacity: 0.8;
+  text-align: center;
+}
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 300px;
+  padding: 20px 30px;
+}
+.details-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+.detailScore {
+  display: flex;
+  width: 200px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.detailScore:nth-child(1) {
+  background-color: #fff5f4;
+}
+.detailScore:nth-child(2) {
+  background-color: #fffaf0;
+}
+.detailScore:nth-child(3) {
+  background-color: #f0faf9;
+}
+.detailScore:nth-child(4) {
+  background-color: #f1f1fd;
+}
+button {
+  font-size: x-small;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: hsl(224, 30%, 27%);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
