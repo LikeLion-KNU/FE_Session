@@ -1,4 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -75,8 +82,8 @@
 
 .score {
     padding-top: 0.5rem;
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 52px;
+    font-weight: 800;
 }
 
 .score-of {
