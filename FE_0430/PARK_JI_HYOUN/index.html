@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head> 
+<body>
+<div class="container">
+    <div class="card">
+        <div class="result">
+            <h3>Your Result</h3>
+            <div class="score-circle">
+              <div class="score">76</div>
+              <div class="out-of">of 100</div>
+          </div>
+          
+            
+            <p class="status">Great</p>
+            <p class="detail">You scored higher than 65% of<br>the people who have taken<br>these tests.</p>
+        </div>
+        <div class="summary">
+            <h3>Summary</h3>
+            <ul>
+              <li class="reaction">
+                  <img src="./assets/images/icon-reaction.svg" alt="Reaction Icon">
+                  <strong> &nbsp Reaction</strong>
+                  <span class="part1">80 &nbsp</span><span class="slash"> / </span><span class="part2">&nbsp 100</span>
+              </li>
+              <li class="memory">
+                  <img src="./assets/images/icon-memory.svg" alt="Memory Icon">
+                  <strong> &nbsp Memory</strong>
+                  <span class="part1">92 &nbsp</span><span class="slash"> / </span><span class="part2">&nbsp 100</span>
+              </li>
+              <li class="verbal">
+                  <img src="./assets/images/icon-verbal.svg" alt="Verbal Icon">
+                  <strong> &nbsp Verbal</strong>
+                  <span class="part1">61 &nbsp</span><span class="slash"> / </span><span class="part2">&nbsp 100</span>
+              </li>
+              <li class="visual">
+                  <img src="./assets/images/icon-visual.svg" alt="Visual Icon">
+                  <strong> &nbsp Visual</strong>
+                  <span class="part1">72 &nbsp</span><span class="slash"> / </span><span class="part2">&nbsp 100</span>
+              </li>
+          </ul>
+          
+          
+            <button>Continue</button>
+        </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.your-website.com">박지현</a>.
+    </div>
+</div>
+</body>
+</html>
