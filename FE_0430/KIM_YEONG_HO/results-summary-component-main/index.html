@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-row {
+      flex-direction: row;
+    }
+
+    .flex-col {
+      flex-direction: column;
+    }
+
+    .flex-1 {
+      flex: 1;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .justify-evenly {
+      justify-content: space-evenly;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    .w-full {
+      width: 100vw;
+    }
+
+    .h-full {
+      height: 100vh;
+    }
+
+    .text-black {
+      color: #303b59;
+    }
+
+    .text-grey {
+      color: #7F7F7F;
+    }
+
+    .text-red {
+      color: #ff5454;
+    }
+
+    .bg-red {
+      background-color: #ff545411;
+    }
+
+    .opacity-50 {
+      opacity: 0.5;
+    }
+
+    .opacity-10 {
+      opacity: 0.1;
+    }
+
+    .opacity-100 {
+      opacity: 1;
+    }
+
+    .text-yellow {
+      color: #ffb41c;
+    }
+
+    .bg-yellow {
+      background-color: #ffb41c11;
+    }
+
+    .text-green {
+      color: #08bc8c;
+    }
+
+    .bg-green {
+      background-color: #08bc8c11;
+    }
+
+    .text-blue {
+      color: #1824d4;
+    }
+
+    .bg-blue {
+      color: #1824d411;
+    }
+
+    .border {
+      border-width: 1px;
+      border-style: solid
+    }
+
+    .border-black {
+      border-color: #303b59;
+    }
+
+    .bg-white {
+      background-color: #FFFFFF;
+    }
+
+    .items-start {
+      align-items: flex-start;
+    }
+
+    .items-stretch {
+      align-items: stretch;
+    }
+
+    .font-bold {
+      font-weight: bold;
+    }
+
+    .font-lighter {
+      font-weight: lighter;
+    }
+
+    .font-regular {
+      font-weight: 500;
+    }
+
+    .font-medium {
+      font-weight: 600;
+    }
+
+    .text-white {
+      color: #ffffff;
+    }
+
+    .text-base {
+      font-size: 1rem;
+    }
+
+    .text-l {
+      font-size: 1.25rem;
+    }
+
+    .text-xl {
+      font-size: 1.5rem;
+    }
+
+    .text-2xl {
+      font-size: 1.75rem;
+    }
+
+    .text-3xl {
+      font-size: 2rem;
+    }
+
+    .bg-black {
+      background-color: #303b59;
+    }
+
+    .text-grey {
+      color: #a4a0a3;
+    }
+  </style>
+</head>
+
+<body class="w-full h-full flex justify-center items-center bg-white">
+  <div style="width: 614px;height: 427px;border-radius: 20px;box-shadow: 20px 20px 20px rgb(221, 221, 221);"
+    class="flex flex-row items-stretch">
+    <div style="width: 307px;background: linear-gradient(#5f44cd,#4534f2);border-radius: 20px;"
+      class="flex flex-col items-center justify-evenly">
+      <div class="text-white text-xl opacity-50">Your Result</div>
+      <div style="width: 168px;height: 168px;border-radius: 84px; background: linear-gradient(#4c25d1,#4534f2);"
+        class="flex flex-col items-center justify-center">
+        <div style="font-size: 3rem;" class="text-white font-bold">76</div>
+        <div class="text-white opacity-50 text-base">of 100</div>
+      </div>
+      <div class="text-white text-xl font-bold">Great</div>
+      <div class="flex flex-col items-center">
+        <div class="text-white font-lighter">You scored higher than 65% of</div>
+        <div class="text-white font-lighter">the people who have taken</div>
+        <div class="text-white font-lighter">these tests.</div>
+      </div>
+    </div>
+    <div style="padding: 32px;" class="flex-1 flex flex-col justify-evenly items-stretch">
+      <div class="text-black text-xl font-bold">Summary</div>
+      <div class="flex-1 flex flex-col items-stretch justify-evenly">
+        <div style="height: 16px;padding: 16px;border-radius: 10px;" class="flex flex-row items-center bg-red">
+          <div class="flex flex-row items-center">
+            <img src="./assets/images/icon-reaction.svg">
+            <div style="width: 12px;"></div>
+            <div class="text-red text-base">Reaction</div>
+          </div>
+          <div class="flex-1"></div>
+          <div class="flex flex-row items-center">
+            <div class="text-black font-bold">80</div>
+            <div style="width: 4px;"></div>
+            <div class="text-grey">/</div>
+            <div style="width: 4px;"></div>
+            <div class="text-grey">100</div>
+          </div>
+        </div>
+        <div style="height: 16px;padding: 16px;border-radius: 10px;" class="flex flex-row items-center bg-yellow">
+          <div class="flex flex-row items-center">
+            <img src="./assets/images/icon-memory.svg">
+            <div style="width: 12px;"></div>
+            <div class="text-yellow text-base">Memory</div>
+          </div>
+          <div class="flex-1"></div>
+          <div class="flex flex-row items-center">
+            <div class="text-black font-bold">92</div>
+            <div style="width: 4px;"></div>
+            <div class="text-grey">/</div>
+            <div style="width: 4px;"></div>
+            <div class="text-grey">100</div>
+          </div>
+        </div>
+        <div style="height: 16px;padding: 16px;border-radius: 10px;" class="flex flex-row items-center bg-green">
+          <div class="flex flex-row items-center">
+            <img src="./assets/images/icon-verbal.svg">
+            <div style="width: 12px;"></div>
+            <div class="text-green text-base">Verbal</div>
+          </div>
+          <div class="flex-1"></div>
+          <div class="flex flex-row items-center">
+            <div class="text-black font-bold">61</div>
+            <div style="width: 4px;"></div>
+            <div class="text-grey">/</div>
+            <div style="width: 4px;"></div>
+            <div class="text-grey">100</div>
+          </div>
+        </div>
+        <div style="height: 16px;padding: 16px;border-radius: 10px;background-color: #1824d411;"
+          class="flex flex-row items-center bg-blue">
+          <div class="flex flex-row items-center">
+            <img src="./assets/images/icon-visual.svg">
+            <div style="width: 12px;"></div>
+            <div class="text-blue text-base">Visual</div>
+          </div>
+          <div class="flex-1"></div>
+          <div class="flex flex-row items-center">
+            <div class="text-black font-bold">72</div>
+            <div style="width: 4px;"></div>
+            <div class="text-grey">/</div>
+            <div style="width: 4px;"></div>
+            <div class="text-grey">100</div>
+          </div>
+        </div>
+      </div>
+      <div style="height: 48px;border-radius: 24px;"
+        class="bg-black flex justify-center items-center text-base text-white font-bold">Continue</div>
+    </div>
+  </div>
+</body>
+
+</html>
