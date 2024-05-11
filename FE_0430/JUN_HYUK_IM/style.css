@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    height: 350px;
+    width: 500px;
+    display: flex;
+
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.card-container p {
+    text-align: center;
+}
+
+.result-card {
+    color: white;
+    display: flex;
+    width: 250px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+}
+
+.circle {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    width: 125px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+}
+
+.circle span:first-child {
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+.result-card * {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.elements {
+    margin: 15px 30px 0px 25px;
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.summary * {
+    padding: 6px;
+}
+.summary h2 {
+    margin: 10px 0px 0px 20px ;
+}
+
+.element-container {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#a {
+    background-color: hsl(0, 100%, 67%, 0.1);   
+}
+#a .element {
+    color: hsl(0, 100%, 67%, 1);
+}
+#b {
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+#b .element {
+    color: hsl(39, 100%, 56%, 1);
+}
+#c {
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+#c .element {
+ color: hsl(166, 100%, 37%, 1);   
+}
+#d {
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+#d .element {
+    color: hsl(234, 85%, 45%, 1);
+}
+
+.button {
+    width: 200px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 20px;
+}
